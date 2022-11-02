@@ -1,0 +1,140 @@
+body {
+    background-color: rgba(220, 224, 254, 255);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 5%;
+    padding: 20px;
+    gap: 10px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: 80%;
+}
+
+@media screen and (max-width: 890px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+.addEmplooye {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #7e7d7d;
+    box-shadow: 5px 5px 10px #3a976f5d;
+}
+
+.addEmplooye__form--group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+label {
+    font-weight: 700;
+    color: rgba(79, 77, 88, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.addEmployee__error {
+    color: #3a976f;
+    font-size: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.addEmplooye__btn--btn {
+    background-color: #3a976f;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #3a976f5d;
+}
+
+.addEmplooye__btn--btn:hover {
+    background-color: #ffffff;
+    color: #3a976f;
+    border: 1px solid #3a976f;
+}
+
+.tableContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+.tableContainer__table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableContainer__th,
+.tbData__td {
+    border: 1px solid #ddd;
+    padding: 5px 2px;
+}
+
+.tableContainer__th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3a976f;
+    color: white;
+}
+
+.tbData__tr:hover {
+    background-color: #ddd;
+}
+
+.tbData__tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tbData__edit--btn {
+    background-color: #3a8ab7;
+    color: #ffffff;
+    font-size: 1.5vw;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #3a976f5d;
+}
+
+.tbData__delete--btn {
+    background-color: #d44b36;
+    color: #ffffff;
+    font-size: 1.5vw;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #3a976f5d;
+}
+
+.tbData__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}

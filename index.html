@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="addEmplooye">
+            <title class="addEmplooye__title">
+                <h1>ADD/EDIT EMPLOYEE</h1>
+            </title>
+            <div class="addEmplooye__form">
+                <div class="addEmplooye__form--group">
+                    <label>Name</label>
+                    <label id="name_error" class="addEmployee__error" style=" display:none">Please enter employee
+                        name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="addEmplooye__form--group">
+                    <label>Surname</label>
+                    <label id="surname_error" class="addEmployee__error" style="display:none">Please enter employee
+                        surname</label>
+                    <input type="text" name="surname" class="form-control" id="surname">
+                </div>
+                <div class="addEmplooye__form--group">
+                    <label>Title</label>
+                    <label id="title_error" class="addEmployee__error" style=" display:none">Please enter employee
+                        title</label>
+                    <input type="text" name="title" class="form-control" id="title">
+                </div>
+                <div class="addEmplooye__form--group">
+                    <label>City</label>
+                    <label id="city_error" class="addEmployee__error" style=" display:none">Please enter employee
+                        city</label>
+                    <input type="text" name="surname" class="form-control" id="city">
+                </div>
+                <div class="addEmplooye__btn">
+                    <button class="addEmplooye__btn--btn" onclick="submitForm()">Submit</button>
+                </div>
+                <div class="w-100">
+                    <span id="message" class="text-success"></span>
+                </div>
+            </div>
+        </div>
+        <div class="tableContainer">
+            <table id="employeeTable" class="tableContainer__table">
+                <thead class="tableContainer__head">
+                    <th class="tableContainer__th">ID</th>
+                    <th class="tableContainer__th">Name</th>
+                    <th class="tableContainer__th">Surname</th>
+                    <th class="tableContainer__th">Title</th>
+                    <th class="tableContainer__th">City</th>
+                    <th class="tableContainer__th">Action</th>
+                </thead>
+                <tbody id="tbData">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
